@@ -1,0 +1,125 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg {
+    background-image: url(../images/Linh.JPG);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.top-header {
+    width: 100%;
+    max-width: 500px;
+    color: white;
+    margin: auto;
+    font: 3em "Poppins", cursive;
+    text-align: left;
+}
+
+.scroll-down {
+    color: white;
+    margin: auto;
+    padding-top: 5%;
+    font: 1.5em "Poppins", cursive;
+    text-align: center;
+    font-weight: bold;
+}
+
+#quote {
+    font-size: 20px;
+}
+
+#famous {
+    font-size: 12px;
+    text-align: left;
+    padding-left: 30%;
+}
+
+.intro {
+    padding: 20%;
+    padding-top: 13%;
+}
+
+.navbar {
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    transition: background-color 1s ease;
+}
+
+.top-nav {
+    overflow: hidden;
+}
+
+.item {
+    float: left;
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+    padding: 1% 2%;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.5s ease;
+}
+
+.item:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.about-me .about-text {
+    font: 2em "Poppins", cursive;
+    padding: 5% 10%;
+}
+
+.about-me .description-text {
+    font: 1em "Poppins", cursive;
+    padding: 5% 10%;
+    font-weight: bold;
+}
+
+.about-me .normal-text {
+    font: 0.8em "Poppins", cursive;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.about-me .normal-text li {
+    padding-bottom: 5%;
+}
+
+.text-container {
+    padding-top: 2%;
+}
+
+.text-container .description-container {
+    display: inline-block;
+    width: 24%;
+    padding-left: 2%;
+    vertical-align: top;
+}
+
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 10px, 0);
+    }
+}
+
+.down-arrow {
+    animation: bounce 1s cubic-bezier(.5, 0.05, 1, .5);
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
