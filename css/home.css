@@ -108,6 +108,17 @@ html {
     vertical-align: top;
 }
 
+.image-container {
+    padding-top: 30%;
+    position: absolute;
+}
+
+.image-container .image-link {
+    width: 25px;
+    display: block;
+    padding-bottom: 50%;
+}
+
 @keyframes bounce {
     from {
         transform: translate3d(0, 0, 0);
