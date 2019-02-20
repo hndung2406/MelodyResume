@@ -5,7 +5,7 @@ $(document).ready(function() {
     };
 
     function scrollFunction() {
-        if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
             document.getElementById("navbar").style.backgroundColor = "white";
             var all = document.getElementsByClassName("item");
             for (var i = 0; i < all.length; i++) {
@@ -22,7 +22,7 @@ $(document).ready(function() {
         }
     }
 
-    $('.scroll-down').on('click', function (e) {
+    $('#scroll').on('click', function (e) {
         $('html, body').animate({
             scrollTop: 649
         }, 800);

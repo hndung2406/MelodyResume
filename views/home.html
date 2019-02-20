@@ -4,29 +4,40 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Dũng Hoàng</title>
     <link rel="stylesheet" href="../css/home.css">
+
+    <!-- Font import -->
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!--AOS image -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- fotorama.css & fotorama.js. -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+
 </head>
 
 <body>
-    <div class="bg" id="home">
+    <section class="bg" id="home">
         <div class="navbar" id="navbar">
             <div class="top-nav">
                 <a class="item" id="home-return" href="#home" style="margin-left: 5%">Dũng Hoàng</a>
-                <a class="item" href="#news">News</a>
+                <a class="item" href="#news">Projects</a>
                 <a class="item" href="#contact">About</a>
                 <a class="item" href="#about" style="float: right; margin-right:5%">Contact</a>
             </div>
         </div>
         <div class="image-container">
             <a href="https://github.com/hndung2406" target="_blank"><img class="image-link" src="../images/github_transparent.png" alt=""></a>
-            <img class="image-link" src="../images/github_transparent.png" alt="">
-            <img class="image-link" src="../images/github_transparent.png" alt="">
-            <img class="image-link" src="../images/github_transparent.png" alt="">
+            <a href="https://twitter.com/DavidHoang2406" target="_blank"><img class="image-link" src="../images/twitter_transparent.png" alt=""></a>
+            <a href="https://www.instagram.com/hndung2406/" target="_blank"><img class="image-link" src="../images/instagram_transparent.png" alt=""></a>
+            <a href="https://www.facebook.com/hndung2406" target="_blank"><img class="image-link" src="../images/facebook_transparent.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/ho%C3%A0ng-d%C5%A9ng-700b37160/" target="_blank"><img class="image-link" src="../images/linkedin_transparent.png" alt=""></a>
         </div>
         <div class="intro">
             <h1 class="top-header" data-aos="zoom-in">DŨNG HOÀNG</h1>
@@ -34,17 +45,17 @@
             <p class="top-header" id="famous" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400"> - King Arthur, Transformers: The Last Knight</p>
         </div>
         <div class="scroll-down" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">
-            <a style="text-decoration: none; color:white" href="#contact">
+            <a style="text-decoration: none; color:white" href="#contact" id="scroll">
                 <span>Scroll Down</span>
                 <br>
                 <i class="fas fa-chevron-down down-arrow"></i>
             </a>
         </div>
-    </div>
-    <div style="height: auto; background-color: #191919;">
+    </section>
+    <section style="height: auto; background-color: #191919;">
         <div style="color: white" class="about-me">
             <div class="about-text">ABOUT ME</div>
-            <p class="normal-text" style="font: 1em 'Poppins', cursive;">Hi, My name is Hoàng Ngọc Dũng, I'm currently a senior majoring in Computer Science at Knox College. After trying a lot of different majors, I think Computer Science is best suited for me as I'm kind of a reserved person. Right now, I'm currently working as Java Software Engineer in FPT Software. And yes, I'm an Appleholic! My favorite quote:</p>
+            <p class="normal-text" style="font: 1em 'Montserrat', cursive;">Hi, My name is Hoàng Ngọc Dũng, I'm currently a senior majoring in Computer Science at Knox College. After trying a lot of different majors, I think Computer Science is best suited for me as I'm kind of a reserved person. Right now, I'm currently working as Java Software Engineer in FPT Software. And yes, I'm an Appleholic! My favorite quote:</p>
             <div class="text-container">
                 <div class="description-container" data-aos="fade-right" data-aos-easing="ease" data-aos-delay="400">
                     <div class="description-text">SOFTWARE ENGINEER</div>
@@ -63,7 +74,7 @@
                         <li>Practicing coding interview on <a href="https://leetcode.com/" target="_blank">leetcode.com</a></li>
                     </ul>
                 </div>
-                <div class="description-container" data-aos="fade-left" data-aos-easing="ease" data-aos-delay="400">
+                <div class="description-container" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
                     <div class="description-text">EDUCATION</div>
                     <ul class="normal-text">
                         <li>Lê Văn Tám Elementary School (2001-2007)</li>
@@ -83,8 +94,32 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div style="height: 100%"></div>
+    </section>
+    <section style="height: auto" class="portfolio">
+        <div class="portfolio-container">
+            <div class="about-text" style="text-align: left; padding-left: 1%;" data-aos="zoom-in">WE KEEP THIS MEMORY IN THE PHOTOGRAPH</div>
+            <div class="portfolio-row">
+                <div class="fotorama" data-allowfullscreen="true" data-nav="thumbs" data-loop="true" data-keyboard="true" data-autoplay="2000">
+                    <img src="../images/birthday_date.jpg" data-fit="cover" data-caption="Bỉthday Date">
+                    <img src="../images/bond.jpeg" data-fit="cover" data-caption="Bond the Cat">
+                    <img src="../images//family.jpg" data-fit="cover" data-caption="Family">
+                    <img src="../images/grandpa_grandma.jpg" data-fit="cover" data-caption="Grandpa Grandma">
+                    <img src="../images/tho.jpg" data-fit="cover" data-caption="Little Niece">
+                    <img src="../images/family_germany.jpg" data-fit="cover" data-caption="New Year's Eve in Germany">
+                    <img src="../images/Linh.JPG" data-fit="cover" data-caption="Graduation's picture">
+                    <img src="../images/tet_holiday.jpeg" data-fit="cover" data-caption="First Tet after 4 years">
+                    <img src="../images/dotavn_euus.jpg" data-fit="cover" data-caption="Dota2VN EU US reunion">
+                    <img src="../images/graduation.jpg" data-fit="cover" data-caption="Graduation's picture">
+                    <img src="../images/graduation_2.jpeg" data-fit="cover" data-caption="Graduation's picture">
+                    <img src="../images/award.jpeg" data-fit="cover" data-caption="First award">
+                    <img src="../images/little_me.jpeg" data-fit="cover" data-caption="Little me">
+                    <img src="../images/hanoi.jpeg" data-fit="cover" data-caption="Beautiful Hanoi">
+                    <img src="../images/china.jpeg" data-fit="cover" data-caption="China">
+                    <img src="../images/knox.jpg" data-fit="cover" data-caption="Knox College">
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="../js/home.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

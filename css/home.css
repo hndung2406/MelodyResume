@@ -55,6 +55,7 @@ html {
     margin: 0;
     width: 100%;
     transition: background-color 1s ease;
+    z-index: 1;
 }
 
 .top-nav {
@@ -76,7 +77,7 @@ html {
     background-color: rgba(0, 0, 0, .2);
 }
 
-.about-me .about-text {
+.about-text {
     font: 2em "Poppins", cursive;
     padding: 5% 10%;
 }
@@ -88,7 +89,7 @@ html {
 }
 
 .about-me .normal-text {
-    font: 0.8em "Poppins", cursive;
+    font: 0.9em "Montserrat", cursive;
     padding-left: 15%;
     padding-right: 15%;
 }
@@ -109,7 +110,7 @@ html {
 }
 
 .image-container {
-    padding-top: 30%;
+    padding-top: 20%;
     position: absolute;
 }
 
@@ -117,6 +118,44 @@ html {
     width: 25px;
     display: block;
     padding-bottom: 50%;
+}
+
+.portfolio-container {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.portfolio-row {
+    margin: 1%-2%;
+}
+
+/* Add padding BETWEEN each column */
+.portfolio-row,
+.portfolio-row > .portfolio-column {
+    padding: 1%;
+}
+
+/* Create four equal columns that floats next to each other */
+.portfolio-column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */
+.portfolio-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.portfolio-content {
+    background-color: #F1F1F1;
+    padding: 5%;
+}
+
+.portfolio-image {
+    width: 100%;
 }
 
 @keyframes bounce {
