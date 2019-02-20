@@ -62,7 +62,7 @@ html {
     overflow: hidden;
 }
 
-.item {
+.nav-item {
     float: left;
     color: white;
     text-align: center;
@@ -73,8 +73,8 @@ html {
     transition: background-color 0.5s ease;
 }
 
-.item:hover {
-    background-color: rgba(0, 0, 0, .2);
+.nav-item:hover {
+    background-color: rgba(0, 0, 0, .03);
 }
 
 .about-text {
@@ -156,6 +156,29 @@ html {
 
 .portfolio-image {
     width: 100%;
+}
+
+.plan {
+    font: 1em "Montserrat", cursive;
+    padding-bottom: 1%;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    background-color: #191919;
+    height: auto;
+}
+
+.footer-item {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 19.66%;
+    text-align: center;
 }
 
 @keyframes bounce {

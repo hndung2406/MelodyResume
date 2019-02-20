@@ -1,5 +1,5 @@
 // When the user scrolls down 20px from the top of the document, slide down the navbar
-$(document).ready(function() {
+$(document).ready(function () {
     window.onscroll = function () {
         scrollFunction()
     };
@@ -7,14 +7,14 @@ $(document).ready(function() {
     function scrollFunction() {
         if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
             document.getElementById("navbar").style.backgroundColor = "white";
-            var all = document.getElementsByClassName("item");
+            var all = document.getElementsByClassName("nav-item");
             for (var i = 0; i < all.length; i++) {
                 all[i].style.marginTop = "0%";
                 all[i].style.color = "black";
             }
         } else {
             document.getElementById("navbar").style.backgroundColor = "";
-            var all = document.getElementsByClassName("item");
+            var all = document.getElementsByClassName("nav-item");
             for (var i = 0; i < all.length; i++) {
                 all[i].style.marginTop = "2%";
                 all[i].style.color = "white";
@@ -27,11 +27,17 @@ $(document).ready(function() {
             scrollTop: 649
         }, 800);
     });
-    
-     $('#home-return').on('click', function (e) {
+
+    $('#home-return').on('click', function (e) {
         $('html, body').animate({
             scrollTop: 0
         }, 800);
     });
-    
+
+    $('#home-return-2').on('click', function (e) {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 800);
+    });
+
 });

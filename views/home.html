@@ -26,10 +26,10 @@
     <section class="bg" id="home">
         <div class="navbar" id="navbar">
             <div class="top-nav">
-                <a class="item" id="home-return" href="#home" style="margin-left: 5%">Dũng Hoàng</a>
-                <a class="item" href="#news">Projects</a>
-                <a class="item" href="#contact">About</a>
-                <a class="item" href="#about" style="float: right; margin-right:5%">Contact</a>
+                <a class="nav-item" id="home-return" href="#home" style="margin-left: 5%">Dũng Hoàng</a>
+                <a class="nav-item" href="#project">Projects</a>
+                <a class="nav-item" href="#contact">Wish List</a>
+                <a class="nav-item" href="#about" style="float: right; margin-right:5%">Contact</a>
             </div>
         </div>
         <div class="image-container">
@@ -55,7 +55,7 @@
     <section style="height: auto; background-color: #191919;">
         <div style="color: white" class="about-me">
             <div class="about-text">ABOUT ME</div>
-            <p class="normal-text" style="font: 1em 'Montserrat', cursive;">Hi, My name is Hoàng Ngọc Dũng, I'm currently a senior majoring in Computer Science at Knox College. After trying a lot of different majors, I think Computer Science is best suited for me as I'm kind of a reserved person. Right now, I'm currently working as Java Software Engineer in FPT Software. And yes, I'm an Appleholic! My favorite quote:</p>
+            <p class="normal-text" style="font: 1em 'Montserrat', cursive;">Hi, My name is Hoàng Ngọc Dũng, I'm currently a senior majoring in Computer Science at Knox College. After trying a lot of different majors, I think Computer Science is best suited for me as I'm kind of a reserved person. Right now, I'm currently working as Java Software Engineer in FPT Software. I'm taking a gap year for working experience in Vietnam.</p>
             <div class="text-container">
                 <div class="description-container" data-aos="fade-right" data-aos-easing="ease" data-aos-delay="400">
                     <div class="description-text">SOFTWARE ENGINEER</div>
@@ -97,7 +97,7 @@
     </section>
     <section style="height: auto" class="portfolio">
         <div class="portfolio-container">
-            <div class="about-text" style="text-align: left; padding-left: 1%;" data-aos="zoom-in">WE KEEP THIS MEMORY IN THE PHOTOGRAPH</div>
+            <div class="about-text" style="text-align: left; padding-left: 0%;" data-aos="zoom-out">WE KEEP THIS MEMORY IN THE PHOTOGRAPH</div>
             <div class="portfolio-row">
                 <div class="fotorama" data-allowfullscreen="true" data-nav="thumbs" data-loop="true" data-keyboard="true" data-autoplay="2000">
                     <img src="../images/birthday_date.jpg" data-fit="cover" data-caption="Bỉthday Date">
@@ -118,13 +118,30 @@
                     <img src="../images/knox.jpg" data-fit="cover" data-caption="Knox College">
                 </div>
             </div>
+            <div style="padding-bottom: 5%">
+                <div class="about-text" style="text-align: left; padding-left: 0%;" data-aos="zoom-out">PLAN IN 2019</div>
+                <ul>
+                    <li class="plan">Finish final course CS205: Algorithm Design & Analysis at Knox College.</li>
+                    <li class="plan">Spring Boot, Microservices, Scalable website with Docker and Kubernetes.</li>
+                    <li class="plan">Deeper understanding of NodeJS and Java Core.</li>
+                    <li class="plan">Django, advanced Python.</li>
+                    <li class="plan">Mastering Numpy, Pandas and Matplotlib, understanding more about Data Analysis.</li>
+                    <li class="plan">If possible, start digging into Machine Learning.</li>
+                </ul>
+            </div>
         </div>
+    </section>
+    <section class="footer">
+        <a class="footer-item" id="home-return-2" href="#home">Home</a>
+        <a class="footer-item" href="#project">Projects</a>
+        <a class="footer-item" href="#about">About</a>
+        <a class="footer-item" href="#gear">Gear</a>
+        <a class="footer-item" href="#about">Contact</a>
     </section>
     <script src="../js/home.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
-
     </script>
 </body>
 
