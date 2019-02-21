@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dũng Hoàng</title>
+    <!-- Link css-->
     <link rel="stylesheet" href="../css/home.css">
 
     <!-- Font import -->
@@ -24,14 +25,7 @@
 
 <body>
     <section class="bg" id="home">
-        <div class="navbar" id="navbar">
-            <div class="top-nav">
-                <a class="nav-item" id="home-return" href="#home" style="margin-left: 5%">Dũng Hoàng</a>
-                <a class="nav-item" href="#project">Projects</a>
-                <a class="nav-item" href="#contact">Wish List</a>
-                <a class="nav-item" href="#about" style="float: right; margin-right:5%">Contact</a>
-            </div>
-        </div>
+        <%- include partials/header.ejs %>
         <div class="image-container">
             <a href="https://github.com/hndung2406" target="_blank"><img class="image-link" src="../images/github_transparent.png" alt=""></a>
             <a href="https://twitter.com/DavidHoang2406" target="_blank"><img class="image-link" src="../images/twitter_transparent.png" alt=""></a>
@@ -56,6 +50,7 @@
         <div style="color: white" class="about-me">
             <div class="about-text">ABOUT ME</div>
             <p class="normal-text" style="font: 1em 'Montserrat', cursive;">Hi, My name is Hoàng Ngọc Dũng, I'm currently a senior majoring in Computer Science at Knox College. After trying a lot of different majors, I think Computer Science is best suited for me as I'm kind of a reserved person. Right now, I'm currently working as Java Software Engineer in FPT Software. I'm taking a gap year for working experience in Vietnam.</p>
+            <p class="normal-text" style="font: 1em 'Montserrat', cursive;">Credit goes to <a href="devoncrawford.io">Devon Crawford</a> for his amazing website template.</p>
             <div class="text-container">
                 <div class="description-container" data-aos="fade-right" data-aos-easing="ease" data-aos-delay="400">
                     <div class="description-text">SOFTWARE ENGINEER</div>
@@ -131,12 +126,8 @@
             </div>
         </div>
     </section>
-    <section class="footer">
-        <a class="footer-item" id="home-return-2" href="#home">Home</a>
-        <a class="footer-item" href="#project">Projects</a>
-        <a class="footer-item" href="#about">About</a>
-        <a class="footer-item" href="#gear">Gear</a>
-        <a class="footer-item" href="#about">Contact</a>
+    <section>
+        <%- include partials/footer.ejs %>
     </section>
     <script src="../js/home.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
