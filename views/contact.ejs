@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dũng Hoàng</title>
+
+    <!--Link css -->
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/contact.css">
+</head>
+
+<body>
+    <section>
+        <%- include partials/header.ejs %>
+    </section>
+    <section style="height:auto">
+        <form action="asd">
+            <div class="contact-container">
+                <h1>Send me an Email</h1>
+                <div>
+                    <div class="input-message">Name</div>
+                    <input type="text" class="input">
+                </div>
+                <div>
+                    <div class="input-message">Email Address</div>
+                    <input type="text" class="input">
+                </div>
+                <div>
+                    <div class="input-message">Subject</div>
+                    <input type="text" class="input">
+                </div>
+                <div>
+                    <div class="input-message">Message</div>
+                    <textarea rows="4" class="input"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </section>
+    <section>
+        <%- include partials/footer.ejs %>
+    </section>
+</body>
+
+</html>

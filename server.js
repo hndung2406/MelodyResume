@@ -13,7 +13,14 @@ app.use("/css", express.static(__dirname + "/public/css"));
 app.use("/images", express.static(__dirname + "/public/images"));
 
 // Start the app
-app.get('/', (req, res) => res.render('home'));
+app.get('/', (req, res) => {
+    res.render('home');
+});
+
+//Contact route
+app.get('/contact', (req, res) => {
+    res.render('contact');
+});
 
 // Start server
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
