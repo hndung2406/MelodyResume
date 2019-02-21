@@ -8,9 +8,9 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 //Static folders
-app.use("/js", express.static(__dirname + "/js"));
-app.use("/css", express.static(__dirname + "/css"));
-app.use("/images", express.static(__dirname + "/images"));
+app.use("/js", express.static(__dirname + "/public/js"));
+app.use("/css", express.static(__dirname + "/public/css"));
+app.use("/images", express.static(__dirname + "/public/images"));
 
 // Start the app
 app.get('/', (req, res) => res.render('home'));
