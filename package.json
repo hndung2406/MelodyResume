@@ -1,0 +1,25 @@
+{
+  "name": "front-end",
+  "version": "1.0.0",
+  "description": "Melody Resume",
+  "main": "server.js",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://hndung2406:Serebii2406@github.com/hndung2406/MelodyResume.git"
+  },
+  "author": "Dung Hoang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hndung2406/MelodyResume/issues"
+  },
+  "homepage": "https://github.com/hndung2406/MelodyResume#readme"
+}
