@@ -4,8 +4,12 @@
   "description": "Melody Resume",
   "main": "server.js",
   "dependencies": {
-    "ejs": "^2.6.1",
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
+    "handlebars": "^4.1.0",
+    "hbs": "^4.0.2",
+    "moment": "^2.24.0",
+    "nodemailer": "^5.1.1",
     "nodemon": "^1.18.10"
   },
   "devDependencies": {},

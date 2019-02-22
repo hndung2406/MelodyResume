@@ -38,16 +38,23 @@ html {
     background-color: rgba(0, 0, 0, .03);
 }
 
-.input {
+.input-field {
     width: 100%;
     padding: 2%;
     border: 1px solid lightgrey;
     border-radius: 5px;
+    font-size: 15px;
+}
+
+.input-field:focus {
+    border-color: #81BDFE;
+    outline: 0;
 }
 
 .input-message {
     margin-top: 4%;
     margin-bottom: 2%;
+    font: 1em "Montserrat", cursive;
 }
 
 .submit-button {
@@ -58,5 +65,5 @@ html {
     background-color: #343A40;
     color: white;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 16px;
 }

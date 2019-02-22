@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dũng Hoàng</title>
+
+    <!--Link css -->
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/contact.css">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- Font import -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+</head>
+
+<body>
+    <section>
+        {{> header}}
+    </section>
+    <section style="height:auto">
+        <form action="send" method="post">
+            <div class="contact-container">
+                <div class="input-message" style="font-weight: bold; font-size: 20px;">Send me an Email</div>
+                <div>
+                    <div class="input-message">Name</div>
+                    <input type="text" class="input-field" name="name">
+                </div>
+                <div>
+                    <div class="input-message">Email Address</div>
+                    <input type="text" class="input-field" name="email">
+                </div>
+                <div>
+                    <div class="input-message">Subject</div>
+                    <input type="text" class="input-field" name="subject">
+                </div>
+                <div>
+                    <div class="input-message">Message</div>
+                    <textarea rows="4" class="input-field" name="message"></textarea>
+                </div>
+                {{#if success}}
+                    <small style="color: green">Email has been sent</small>
+                {{else if error}}
+                    <small style="color: red">Error sending email</small>
+                {{else}}
+
+                {{/if}}
+                <button type="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </section>
+    <section>
+        {{> footer}}
+    </section>
+    <script src="/js/contact.js"></script>
+</body>
+
+</html>
