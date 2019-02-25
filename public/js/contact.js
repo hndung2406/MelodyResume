@@ -23,4 +23,11 @@ $(document).ready(function () {
 
     $('#home-return-2').attr("href", "/");
 
+    var queryString = location.search;
+    var sendEmailResult = queryString.match(/success|error/gi);
+    if(sendEmailResult == 'success') {
+        swal("Congratulation!", "Email has been sent!", "success");
+    } else if(sendEmailResult == 'error') {
+        swal("Sorry!", "Something is wrong with your email!", "error");
+    }
 });

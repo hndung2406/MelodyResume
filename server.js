@@ -53,6 +53,16 @@ app.get('/contact', (req, res) => {
 // Send mail
 app.post('/send', (req, res) => {
 
+    const output=`
+    <h3>Contact Details</h3>
+    <ul>
+      <li>Name is : ${req.body.name}</li>
+      <li>Email is : ${req.body.email}</li>
+    </ul>
+    <h3>Message</h3>
+    <p>${req.body.message}</p>
+    `
+
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
@@ -68,7 +78,8 @@ app.post('/send', (req, res) => {
         from: `${req.body.name}` + req.body.email,
         to: 'hndung2406@gmail.com',
         subject: req.body.subject,
-        html: `<p>${req.body.name}, <<a href="${req.body.email}">${req.body.email}</a>></p><br><p>${req.body.message}</p>`
+        text: 'Your have a new contact request',
+        html: output
     };
 
     transporter.sendMail(mailOptions, function (error, info) {

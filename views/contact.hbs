@@ -42,13 +42,6 @@
                     <div class="input-message">Message</div>
                     <textarea rows="4" class="input-field" name="message"></textarea>
                 </div>
-                {{#if success}}
-                    <small style="color: green">Email has been sent</small>
-                {{else if error}}
-                    <small style="color: red">Error sending email</small>
-                {{else}}
-
-                {{/if}}
                 <button type="submit" class="submit-button">Submit</button>
             </div>
         </form>
@@ -57,6 +50,7 @@
         {{> footer}}
     </section>
     <script src="/js/contact.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 
 </html>
